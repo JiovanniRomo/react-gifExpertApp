@@ -6,11 +6,9 @@ import PropTypes from 'prop-types';
 export const AddCategory = ({setCategory}) => {
 
 
-    const [inputValue, setinputValue] = useState('Hola mundo');
+    const [inputValue, setinputValue] = useState('');
 
     const handleInputCange = (e) => {
-        
-
         setinputValue(e.target.value);
     }
 
@@ -24,13 +22,14 @@ export const AddCategory = ({setCategory}) => {
             setinputValue(''); //esto es para no hacer una doble inserción, borra lo que el usuario ya escribio
         }
 
-        
+
     }
 
     return (
         <form onSubmit={handleSubmit}>
+            <p>{inputValue}</p>
             <input
-                type='text' 
+                type='text'
                 value={inputValue}
                 onChange={ handleInputCange }
             />

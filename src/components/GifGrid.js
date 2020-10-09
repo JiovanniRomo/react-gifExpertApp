@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { GifGridItem } from './GifGridItem';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 
@@ -8,9 +9,6 @@ export const GifGrid = ({category}) => {
 
     const {data:images, loading} = useFetchGifs(category);
 
-    console.log(loading);
-    
-    
     
     return (
         //Como ya estamos retornando 2 objetos(h3, div) , usamos fragment
@@ -30,4 +28,8 @@ export const GifGrid = ({category}) => {
             </div>
         </>
     )
+}
+
+GifGrid.propType = {
+    category: PropTypes.string.isRequired
 }
