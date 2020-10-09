@@ -8,18 +8,7 @@ export const GifExpertApp = ({defaultCategories = []}) => {
 
     const [categories, setCategory] = useState(defaultCategories);
 
-    /*
-    //Esto indica a React que el estado cambio y debe renderizar todo de nuevo
-    const handleadd = () => {
-        //Extraemos las categorias que ya teniamos y despues añadimos una nueva categoria
-        // setCategory([...categories, 'Hola 3 xd']);
-
-        //Recuerda que el callback es el estado anterior y después de la funcion de flecha sera el nuevo estado
-        setCategory(cats => [...cats, 'Hola 3 xd']);
-    }
-    */
-
-
+    
     return (
         <>
             <h2>Gif Expert App</h2>
