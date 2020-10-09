@@ -22,7 +22,7 @@ export const GifExpertApp = ({defaultCategories = []}) => {
 
     return (
         <>
-            <h2>GIfEpertApp</h2>
+            <h2>Gif Expert App</h2>
             <AddCategory setCategory={setCategory} />
             <hr />
 
